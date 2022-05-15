@@ -44,3 +44,8 @@ header nav ul li a:hover {
   text-decoration-color: var(--third-color);
 
 }
+
+.nav-active {
+  color: var(--third-color);
+  text-decoration: underline;
+}
