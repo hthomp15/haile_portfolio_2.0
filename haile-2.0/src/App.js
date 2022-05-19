@@ -14,7 +14,6 @@ function App() {
         <main>
           <About></About>
           <Projects></Projects>
-          {/* {!isOpen? (<About></About>) : (<Projects></Projects>)} */}
         </main>
         <Footer></Footer>
     </div>
