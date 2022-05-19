@@ -1,3 +1,7 @@
+* {
+  
+}
+
 :root{
   --primary-color: #264653;
   --secondary-color: #2a9d8f;
@@ -21,8 +25,7 @@ header {
   top: 0;
   z-index: 9999;
   padding: 20px;
-  margin-left:10%;
-  margin-right: 10%;
+  background-color: var(--primary-color);
 
 }
 header nav ul {
@@ -48,4 +51,53 @@ header nav ul li a:hover {
 .nav-active {
   color: var(--third-color);
   text-decoration: underline;
+}
+
+/* About Me Section  */
+
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-me h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--secondary-font);
+  text-shadow: 2px 2px 2px var(--secondary-color);
+  background-color: var(--third-color);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 0, 15%, 0, 15%;
+}
+
+.about-me-container {
+  width: 60%;
+  background-color: var(--main-font);
+  border-radius: 40%;
+  padding: 9%;
+
+}
+
+.about-me-photo img {
+  float: left;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+  width: 50%;
+  height: 50%;
+  shape-outside: circle();
+  clip-path: circle();
+  margin: 10px;
+}
+
+.about-me-text p {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+  color: var(--primary-color);
+
 }
