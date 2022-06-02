@@ -1,34 +1,36 @@
 import React from "react";
-import { useState } from "react";
+import resume from "../../assets/documents/resume.pdf";
 
-function Nav() {
-    const navBars = [
-        {name: "About",link: "#about"},
-        {name: "Contact", link: "#contact" },
-        {name: "Work", link: "#work" }, 
-        {name: "Resume", link: "#resume", target: "_blank" },
-    ];
-
-    const [isOpen, setIsOpen] = useState(false);
-    const [currentCategory, setCurrentCategory] = useState(navBars[0]);
-
-
-    return(
-        <nav className="navigation">
-            <h1>Hello I'm Haile Thompson</h1>
-            <ul className="nav-bar">
-                {navBars.map((navBar) => {
-                    return(
-                    <li className={`${currentCategory.name === navBar.name && !isOpen &&'nav-active'}`} key={navBar.name}> 
-                        <a href={navBar.link} target={navBar.target} onClick={ ()=>{
-                            setIsOpen(false);
-                            setCurrentCategory(navBar);
-                        }}>{navBar.name}</a>
-                    </li>)
-                })}           
-            </ul>
-        </nav> 
-    )
+function Nav({ isOpen, setIsOpen }) {
+  return (
+    <nav className="nav">
+      <div className="nav-logo">
+        <a href="#about">
+          <img src="d" alt="logo" />
+        </a>
+      </div>
+      <div className="nav-links">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <div className="nav-resume">
+                <a href={resume} target="_blank" rel="noopener noreferrer">
+                    Resume
+                </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    );
 }
 
 export default Nav;
