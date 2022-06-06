@@ -1,6 +1,9 @@
 * {
   
 }
+ul {
+  padding-inline-start: 0;
+}
 
 :root{
   --primary-color: #264653;
@@ -100,4 +103,39 @@ header nav ul li a:hover {
   margin: 10px;
   color: var(--primary-color);
 
+}
+
+
+
+
+
+footer {
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-svgs ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.contact-svgs ul a img {
+  padding: 20px;
+}
+
+footer .contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer h4 {
+  padding: 20px;
+  margin: 0 ;
+  font-size: 20px;
+}
+footer .contact-svgs ul li a img:hover {
+  background: var(--secondary-color);
+  border-radius: 10px;
 }

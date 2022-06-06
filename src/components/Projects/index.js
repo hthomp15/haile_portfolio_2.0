@@ -52,7 +52,7 @@ function Projects() {
     return (
         <div className='projects-container' id='work'>
             <h2 className="projects-header">Projects</h2>
-                {projects.map((project) => {
+                {/* {projects.map((project) => {
                     return(
                         <div className="project" key={project.name}>
                             <a href={project.link} target="_blank" rel="noopener noreferrer"> 
@@ -64,7 +64,7 @@ function Projects() {
                             </a>
                         </div>
                     )
-                })}
+                })} */}
         </div>
     );
 }
