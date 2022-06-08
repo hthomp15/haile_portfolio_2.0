@@ -1,7 +1,7 @@
 import React from "react";
 // import photo from "../../assets/images/work/cream-logo.png"
 
-function Projects() {
+function Work() {
     const projects = [
         {
             name: "C.R.E.A.M", 
@@ -50,23 +50,23 @@ function Projects() {
     ];
 
     return (
-        <div className='projects-container' id='work'>
+        <section className='projects-container' id='work'>
             <h2 className="projects-header">Projects</h2>
-                {/* {projects.map((project) => {
+                {projects.map((project) => {
                     return(
-                        <div className="project" key={project.name}>
+                        <article className="project" key={project.name}>
                             <a href={project.link} target="_blank" rel="noopener noreferrer"> 
-                                <img src={require(`${project.photo}`)} alt={project.name}/>
+                                <img src="" alt={project.name}/>
                                 <div className="project-info">
                                     <h3>{project.name}</h3>
                                     <p>{project.description}</p>
                                 </div>
                             </a>
-                        </div>
+                        </article>
                     )
-                })} */}
-        </div>
+                })}
+        </section>
     );
 }
 
-export default Projects;
+export default Work;

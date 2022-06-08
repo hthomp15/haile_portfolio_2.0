@@ -3,7 +3,7 @@ import photo from '../../assets/images/about-me/img-1.jpeg';
 
 function About() {
     return (
-            <div className='about-me' id='about'>
+            <section className='about-me' id='about'>
                 
                 <div className = 'about-me-container'>
                 <h2>About Me</h2>
@@ -22,7 +22,7 @@ function About() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
     );
 }
 

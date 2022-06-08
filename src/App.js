@@ -1,21 +1,28 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/index.js';
-import About from './components/About/index.js';
-import Projects from './components/Projects/index.js';
-import Footer from './components/Footer/index.js';
+import About from './components/About/index';
+import Work from './pages/Work/index';
+import Footer from './components/Footer/index';
+import Nav from './components/Nav/index'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="App">
-        <Header></Header>
-        <main>
-          <About></About>
-          <Projects></Projects>
-        </main>
-        <Footer></Footer>
+      <header>
+        <Nav></Nav>
+      </header>
+      <main>
+       <Router>
+         <Routes>
+           <Route path="/" element={<About />} />
+           <Route path="/work" element={<Work />} />
+         </Routes>
+       </Router>
+      </main>
+      <Footer></Footer>
     </div>
   );
 }
