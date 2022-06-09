@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import About from './components/About/index';
+import About from './pages/About/index';
 import Work from './pages/Work/index';
 import Footer from './components/Footer/index';
 import Nav from './components/Nav/index'
@@ -11,18 +11,24 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <Nav></Nav>
-      </header>
-      <main>
-       <Router>
-         <Routes>
-           <Route path="/" element={<About />} />
-           <Route path="/work" element={<Work />} />
-         </Routes>
-       </Router>
+
+
+      <main className="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
+
+        <Router>
+          <header>
+            <Nav></Nav>
+          </header>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/work" element={<Work />} />
+          </Routes>
+          <Footer></Footer>
+        </Router>
+        {/* <About></About>
+        <Work></Work> */}
       </main>
-      <Footer></Footer>
+
     </div>
   );
 }

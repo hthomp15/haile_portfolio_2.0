@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return (
         <footer>
-            <div class="contact-svgs" id="contact">
+            <div className="contact-svgs" id="contact">
                 
                 <ul className="contact-list">
                     <li><a href="https://www.linkedin.com/in/haile-thompson-b9a21013a/" target="_blank" rel="noopener noreferrer"><img alt="LinkedIn" src={require("../../assets/images/svg-icons/icons8-linkedin.svg")}/></a></li>
