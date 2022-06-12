@@ -52,7 +52,7 @@ function Work() {
     return (
         <div className="container m-auto">
         <h2 className="text-3xl text-yellow drop-shadow-lg underline decoration-orange font-extrabold text-center m-2 p-2 ">Projects</h2>
-        <section className='grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-4 projects-container' id='work'>
+        <section className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 projects-container' id='work'>
             <article className="bg-orange opacity-80 rounded overflow-hidden shadow-lg">
                 <a href="https://genehackerman.github.io/MillionDollarDream/" target="_blank" rel="noopener noreferrer">
                     <img className="h-100 mb-2" src={require("../../assets/images/work/cream-logo.png")} alt="C.R.E.A.M" />
