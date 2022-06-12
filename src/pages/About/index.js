@@ -3,11 +3,11 @@ import photo from '../../assets/images/about-me/img-1.jpeg';
 
 function About() {
     return (
-            <section className='about-me' id='about'>
-                
-                <div className = 'about-me-container'>
-                <h2>About Me</h2>
-                    <div className = 'about-me-photo'>
+            <section className='opacity-85 mt-5 about-me' id='about'>
+             
+                <div className='about-me-container'>
+                    <h2 className=''>About Me</h2>
+                    <div className='about-me-photo'>
                         <img src={photo} alt='portrait of Haile'/>
                     </div>
                     <div className = 'about-me-text'>

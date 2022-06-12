@@ -1,8 +1,6 @@
-* {
-  
-}
-ul {
-  padding-inline-start: 0;
+body { 
+  background-image: radial-gradient(circle, #2a9d8e 0%, #264653 100%);
+
 }
 
 :root{
@@ -14,12 +12,6 @@ ul {
 }
 
 
-
-.App {
-  background-image: radial-gradient(circle, #2a9d8e 0%, #264653 100%);
-  min-height: 100vh;
-  color: var(--secondary-font);
-}
 
 /* Nav bar  */
 header {
@@ -63,29 +55,22 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
-
-.about-me h1 {
+.about-me h2 {
   font-size: 50px;
   font-weight: bold;
   color: var(--secondary-font);
   text-shadow: 2px 2px 2px var(--secondary-color);
   background-color: var(--third-color);
   border-radius: 10px;
-  padding: 10px;
   text-align: center;
-  margin: 0, 15%, 0, 15%;
 }
-
 .about-me-container {
-  width: 60%;
+  width: 85%;
   background-color: var(--main-font);
   border-radius: 40%;
   padding: 9%;
-
 }
-
 .about-me-photo img {
   float: left;
   border-radius: 50%;
@@ -96,46 +81,43 @@ header nav ul li a:hover {
   clip-path: circle();
   margin: 10px;
 }
-
 .about-me-text p {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: left;
-  margin: 10px;
+  margin: 1rem;
   color: var(--primary-color);
-
-}
-
-
-
-
-
-footer {
-  padding: 0 20px 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-svgs ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-}
-.contact-svgs ul a img {
-  padding: 20px;
-}
-
-footer .contact-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 footer h4 {
-  padding: 20px;
+  padding: 1rem;
   margin: 0 ;
-  font-size: 20px;
+  font-size: 1rem;
 }
-footer .contact-svgs ul li a img:hover {
+footer .contact-svg a svg:hover {
   background: var(--secondary-color);
   border-radius: 10px;
+}
+
+@media (max-width:748px) {
+  .about-me-container {
+    width: 100%;
+    background-color: var(--main-font);
+    border-radius: 0;
+    padding: 10px;
+  }
+  .about-me h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--secondary-font);
+    text-shadow: 2px 2px 2px var(--secondary-color);
+    background-color: var(--third-color);
+    border-radius: 10px;
+    text-align: center;
+  }
+  .about-me-text p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 1rem;
+    color: var(--primary-color);
+  }
 }
