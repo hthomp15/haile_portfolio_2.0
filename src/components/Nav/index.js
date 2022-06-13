@@ -11,11 +11,11 @@ function Nav() {
       <div className="nav-links">
         <ul>
           <li>
-            <Link to="/" className={section === 'About' ? 'nav-active' : null} onClick={()=>{setSection('About')}}>About
+            <Link to="/haile_portfolio_2.0" className={section === 'About' ? 'nav-active' : null} onClick={()=>{setSection('About')}}>About
             </Link>
           </li>
           <li>
-            <Link to="/work" className={section === 'Work' ? 'nav-active' : null} onClick={()=>{setSection('Work')}}>Work
+            <Link to="haile_portfolio_2.0/work" className={section === 'Work' ? 'nav-active' : null} onClick={()=>{setSection('Work')}}>Work
             </Link>
           </li>
           <li>
