@@ -1,0 +1,123 @@
+body { 
+  background-image: radial-gradient(circle, #2a9d8e 0%, #264653 100%);
+
+}
+
+:root{
+  --primary-color: #264653;
+  --secondary-color: #2a9d8f;
+  --third-color: #e9c46a;
+  --main-font: #f4a261;
+  --secondary-font: #e76751;
+}
+
+
+
+/* Nav bar  */
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 20px;
+  background-color: var(--primary-color);
+
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav ul li a {
+  padding: 15px;
+  font-size: 22px;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--third-color);
+  border-radius: 10px;
+  text-shadow: none;
+  text-decoration-color: var(--third-color);
+
+}
+
+.nav-active {
+  color: var(--third-color);
+  text-decoration: underline;
+}
+
+/* About Me Section  */
+
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--secondary-font);
+  text-shadow: 2px 2px 2px var(--secondary-color);
+  background-color: var(--third-color);
+  border-radius: 10px;
+  text-align: center;
+}
+.about-me-container {
+  width: 85%;
+  background-color: var(--main-font);
+  border-radius: 40%;
+  padding: 9%;
+}
+.about-me-photo img {
+  float: left;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+  width: 50%;
+  height: 50%;
+  shape-outside: circle();
+  clip-path: circle();
+  margin: 10px;
+}
+.about-me-text p {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 1rem;
+  color: var(--primary-color);
+}
+
+footer h4 {
+  padding: 1rem;
+  margin: 0 ;
+  font-size: 1rem;
+}
+footer .contact-svg a svg:hover {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+@media (max-width:748px) {
+  .about-me-container {
+    width: 100%;
+    background-color: var(--main-font);
+    border-radius: 0;
+    padding: 10px;
+  }
+  .about-me h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--secondary-font);
+    text-shadow: 2px 2px 2px var(--secondary-color);
+    background-color: var(--third-color);
+    border-radius: 10px;
+    text-align: center;
+  }
+  .about-me-text p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 1rem;
+    color: var(--primary-color);
+  }
+}
