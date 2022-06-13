@@ -20,7 +20,7 @@ function App() {
             <Nav></Nav>
           </header>
           <Routes>
-            <Route path="/haile_portfolio_2.0" element={<About />} />
+            <Route path="/" element={<About />} />
             <Route path="/work" element={<Work />} />
           </Routes>
           <Footer></Footer>
