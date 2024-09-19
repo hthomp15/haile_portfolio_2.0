@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/haile_portfolio_2.0/static/css/main.b46742b7.css",
-    "main.js": "/haile_portfolio_2.0/static/js/main.1bcfc72b.js",
+    "main.css": "/haile_portfolio_2.0/static/css/main.0c02ad8e.css",
+    "main.js": "/haile_portfolio_2.0/static/js/main.700880bc.js",
     "static/js/787.94b75a45.chunk.js": "/haile_portfolio_2.0/static/js/787.94b75a45.chunk.js",
     "static/media/img-1.jpeg": "/haile_portfolio_2.0/static/media/img-1.ef9144e54503745aa2a2.jpeg",
-    "static/media/dinnection_home.png": "/haile_portfolio_2.0/static/media/dinnection_home.41d74b3eae9bd37601f1.png",
+    "static/media/writers-blog.png": "/haile_portfolio_2.0/static/media/writers-blog.6923acc1718cf649c607.png",
     "static/media/cream-logo.png": "/haile_portfolio_2.0/static/media/cream-logo.9d433c27d8fd9d8ef0a3.png",
     "static/media/Screen-shot-weather.png": "/haile_portfolio_2.0/static/media/Screen-shot-weather.ad8d8541629c2ce6b7e0.png",
-    "static/media/resume.pdf": "/haile_portfolio_2.0/static/media/resume.9fcb3124f6bd85c0bddd.pdf",
+    "static/media/FarmersDAO.jpg": "/haile_portfolio_2.0/static/media/FarmersDAO.677ec50c7fe4b8077b5f.jpg",
+    "static/media/haile-thompson-resume.pdf": "/haile_portfolio_2.0/static/media/haile-thompson-resume.3260e99d8718fd2ec6d0.pdf",
     "static/media/istockphoto-led.jpeg": "/haile_portfolio_2.0/static/media/istockphoto-led.631f7c292754a07499f3.jpeg",
     "index.html": "/haile_portfolio_2.0/index.html",
-    "main.b46742b7.css.map": "/haile_portfolio_2.0/static/css/main.b46742b7.css.map",
-    "main.1bcfc72b.js.map": "/haile_portfolio_2.0/static/js/main.1bcfc72b.js.map",
+    "main.0c02ad8e.css.map": "/haile_portfolio_2.0/static/css/main.0c02ad8e.css.map",
+    "main.700880bc.js.map": "/haile_portfolio_2.0/static/js/main.700880bc.js.map",
     "787.94b75a45.chunk.js.map": "/haile_portfolio_2.0/static/js/787.94b75a45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b46742b7.css",
-    "static/js/main.1bcfc72b.js"
+    "static/css/main.0c02ad8e.css",
+    "static/js/main.700880bc.js"
   ]
 }
